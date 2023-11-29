@@ -1,0 +1,42 @@
+{% extends 'home/base.html' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <h1 style="text-align: center;">Welcome To </h1>
+            <h2 style="text-align: center;">Task Management System</h2>
+        </div> 
+
+        <div class="section">
+            <!--   Icon Section   -->
+            <div class="row">
+              <div class="col s12 offset-m2 m4">
+                <div class="card blue">
+                  <div class="card-content white-text">
+                    <img src="https://drive.google.com/uc?id=1NSpEq-q0Ecd_GTLJ45EkksZkE53gFcgK" 
+                    width="100" height="100" class="center">
+                    <br>
+                    <a href="{% url 'Login' %}" class="waves-effect waves-light btn-large center">Login</a>
+                    <!-- <span class="card-title" style="text-align: center;">Login</span> -->
+                    <p style="text-align: center;">(Manage your calender)</p>
+                  </div>
+                </div>
+              </div>  
+
+              <div class="col s12 offset-m2 m4">
+                <div class="card blue">
+                  <div class="card-content white-text">
+                    <img src="https://drive.google.com/uc?id=1EzP_mPC6gDxMBCZIX_S6A6FpOgsXLEqV" 
+                    width="100" height="100" class="center">
+                    <br>
+                    <a href="{% url 'signUp' %}" class="waves-effect waves-light btn-large center">Sign Up</a>
+                    <p style="text-align: center;">(New User)</p>
+                  </div>
+                </div>
+              </div> 
+
+            </div>
+        </div>    
+    </div>
+
+{% endblock %}
